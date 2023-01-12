@@ -2,12 +2,16 @@ package AlgorithmsAndDataStructures.Algorithms.Searching;
 
 import java.util.ArrayList;
 
+//Linear search has a time complexity of O(n)
+//Space complexity is O(1) as there is no extra memory used is for temporary variables while looping through the Array.
+
+
 public class LinearSearch {
 
     public static boolean linearSearch(ArrayList<Integer> list, int target){
         for(int i=0; i<list.size(); i++){
             if(list.get(i) == target){
-                System.out.println("Target ("+target+") found at position "+i);
+                System.out.println("Target ("+target+") found at index "+i);
                 return true;
             }
         }
@@ -22,6 +26,6 @@ public class LinearSearch {
         myList.add(12);
         myList.add(21);
         myList.add(2);
-        linearSearch(myList, 5);
+        linearSearch(myList, 0);
     }
 }
